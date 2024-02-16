@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #001e4d;
+}
+
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+
+.quiz {
+    padding: 20px 0; 
+}
+
+.quiz h2,
+a {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    background: white;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: white;
+}
+
+.btn:disabled {
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.wrong {
+    background: rgb(255, 161, 161);
+}
+
+.wrong:hover {
+    background: rgb(255, 161, 161);
+    color: #222;
+}
+
+.correct {
+    background: rgb(161, 255, 169);
+}
+
+.correct:hover {
+    background: rgb(161, 255, 169);
+    color: #222;
+}
+
+#score {
+    display: none;
+}
+
+a {
+    background: white;
+    color: #222;
+    font-weight: 500;
+    /* width: 10rem; */
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    padding-right: 26.34rem;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+a:hover {
+    background: #001e4d;
+    color: white;
+}
+
+.home {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    background: #001e4d;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 0;
+    padding-right: 0;
+    text-align: left;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.home:hover {
+    transform: scale(1.1);
+}
+
+span {
+    opacity: 0;
+}
+
+@media  screen and (max-width:600px) {
+    a {
+        padding-right: 16rem;
+    }
+}
